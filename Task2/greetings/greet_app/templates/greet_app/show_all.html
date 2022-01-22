@@ -1,0 +1,16 @@
+{% extends 'greet_app/base.html' %}
+
+<!-- {% block title %}
+{{title}}
+{% endblock %} -->
+
+
+
+{% block content %}
+<h2>Show all names:</h2>
+{% for el in all_names %}
+<div>
+- {{el.name}}
+{% endfor %}
+</div>
+{% endblock %}
